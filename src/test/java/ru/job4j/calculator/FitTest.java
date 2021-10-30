@@ -4,17 +4,13 @@ import org.junit.Test;
 import org.junit.Assert;
 
 public class FitTest {
-    /**
-     * Точность сравнения
-     */
-    private float delta = 0.01f;
 
     @Test
     public void whenMan180Then92() {
         short in = 180;
         double expected = 92;
         double out = Fit.manWeight(in);
-        Assert.assertEquals(expected, out, delta);
+        Assert.assertEquals(expected, out, 0.01f);
     }
 
     @Test
@@ -22,6 +18,6 @@ public class FitTest {
         short in = 190;
         double expected = 92;
         double out = Fit.womanWeight(in);
-        Assert.assertEquals(expected, out, delta);
+        Assert.assertEquals(expected, out, 0.01f);
     }
 }
