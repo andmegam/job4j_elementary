@@ -1,7 +1,5 @@
 package ru.job4j.condition;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class MultipleSwitchWeek {
     public static int numberOfDay(String name) {
         return switch (name) {
