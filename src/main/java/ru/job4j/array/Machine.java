@@ -10,20 +10,18 @@ public class Machine {
         int size = 0;
         int changeMoney = money - price;
 
-        while (changeMoney > 0) {
-            for (int i = 0; i < coins.length; i++) {
-                if (changeMoney - coins[i] >= 0) {
-                    rsl[size++] = coins[i];
-                    changeMoney -= coins[i];
-                    break;
-                }
+        for (int coin : coins) {
+            while (changeMoney - coin >= 0) {
+                changeMoney -= coin;
+                rsl[size++] = coin;
             }
         }
+
         return Arrays.copyOf(rsl, size);
     }
 
     public static void main(String[] args) {
-        int[] newArray = change(50, 12);
+        int[] newArray = change(50, 1);
 
         for (int i = 0; i < newArray.length; i++) {
             System.out.println(newArray[i]);
