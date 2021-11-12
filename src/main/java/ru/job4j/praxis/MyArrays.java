@@ -15,12 +15,6 @@ public class MyArrays {
         };
         int[] res = rightDiagonal(data);
         System.out.println(Arrays.toString(res));
-//        for (int i = 0; i < res.length; i++) {
-//            for (int j = 0; j < res[i].length; j++) {
-//                System.out.print(res[i][j]);
-//            }
-//            System.out.println();
-//        }
     }
 
     /**
@@ -85,11 +79,6 @@ public class MyArrays {
     /**
      * Даны целые числа n (> 2), a и b. Сформировать и вывести целочисленный массив размера n, первый элемент
      * которого равен a, второй равен b, а каждый последующий элемент равен сумме всех предыдущих.
-     *
-     * @param a
-     * @param b
-     * @param n
-     * @return
      */
     public static int[] summingPrevious(int a, int b, int n) {
         int[] result = new int[n];
