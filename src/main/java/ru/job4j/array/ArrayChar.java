@@ -6,14 +6,10 @@ public class ArrayChar {
 
         boolean result = true;
 
-        if ((word.length < pref.length) || pref.length == 0) {
-            result = false;
-        } else {
-            for (int i = 0; i < pref.length; i++) {
-                if (word[i] != pref[i]) {
-                    result = false;
-                    break;
-                }
+        for (int i = 0; i < pref.length; i++) {
+            if (word[i] != pref[i]) {
+                result = false;
+                break;
             }
         }
         return result;
