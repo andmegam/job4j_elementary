@@ -6,7 +6,6 @@ public class Main {
         int age = 18;
         float length = 78.0332F;
         boolean baby = true;
-
         System.out.println("age=" + age);
         System.out.println("length=" + length);
         System.out.println("baby=" + baby);

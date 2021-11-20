@@ -11,7 +11,6 @@ public class Topic1 {
         double distanceToSpace = 10000000.5D;
         boolean permissionWork = true;
         long fileSize = 1772400L;
-
         System.out.println("Возраст age (byte) = " + age);
         System.out.println("Пол sex (char) = " + sex);
         System.out.println("Рост (в метрах) height (float) = " + height);

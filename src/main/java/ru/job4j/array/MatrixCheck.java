@@ -29,7 +29,6 @@ public class MatrixCheck {
         for (int i = 0; i < board.length; i++) {
             rsl[i] = board[i][i];
         }
-
         return rsl;
     }
 

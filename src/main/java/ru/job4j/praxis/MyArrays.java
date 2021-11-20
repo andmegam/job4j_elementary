@@ -7,7 +7,6 @@ public class MyArrays {
     public static void main(String[] args) {
         int[] left = {1, 3};
         int[] right = {2, 4};
-
         int[][] data = {
                 {1, 2, 3},
                 {4, 5, 6},
